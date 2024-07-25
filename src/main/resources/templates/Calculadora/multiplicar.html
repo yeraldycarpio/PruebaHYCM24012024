@@ -1,0 +1,19 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <body>
+       
+        <h1>Multiplicar</h1>
+        <form th:action="@{/calculadora/multiplicar}" method="post">
+            <label for="num1">Number 1:</label>
+            <input type="number" id="num1" name="num1" th:value="${num1}"><br>
+    
+            <label for="num2">Number 2:</label>
+            <input type="number" id="num2" name="num2" th:value="${num2}">
+            <br>
+            <label for="num3">Resultado</label>
+            <input type="number"  th:value="${result}" disabled>
+            <br>
+            <button type="submit">Calcular</button>
+        </form>
+    
+    </body>
+</html>
